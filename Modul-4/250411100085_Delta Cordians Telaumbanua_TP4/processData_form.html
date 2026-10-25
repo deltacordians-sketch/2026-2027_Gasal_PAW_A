@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+
+    <form action="processData.php" method="POST">
+        <fieldset>
+            <legend>Person Details</legend>
+
+            <p>
+                <label for="surname">Surname:</label><br>
+                <input type="text" id="surname" name="surname" size="31">
+            </p>
+
+            <p>     
+                <label for="email">Email address:</label><br>
+                <input type="text" id="email" name="email" size="31">
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" size="31">
+            </p>
+
+            <p>
+                <label for="address">Street Address:</label><br>
+                <textarea id="address" name="address"
+                    rows="3" cols="30"></textarea>
+            </p>
+
+            <p>
+                <label for="state">State:</label><br>
+                <select id="state" name="state">
+                    <option value="">Choose your state</option>
+                    <option value="Australian Capital Territory">Australian Capital Territory</option>
+                    <option value="Queensland">Queensland</option>
+                    <option value="Victoria">Victoria</option>
+                    <option value="New South Wales">New South Wales</option>
+                    <option value="Tasmania">Tasmania</option>
+                    <option value="South Australia">South Australia</option>
+                    <option value="Western Australia">Western Australia</option>
+                    <option value="Northern Territory">Northern Territory</option>
+                </select>
+            </p>
+
+            <input type="hidden" name="country" value="Australia">
+
+            <p>
+                Gender:<br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="vegetarian" name="vegetarian"
+                    value="Yes">
+                <label for="vegetarian">Vegetarian?</label>
+            </p>
+
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>
